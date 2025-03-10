@@ -10,7 +10,7 @@ public class Guess {
         Teachers.add(new Teacher(false, "Art", "T", true, "black", false, false, "Sara Ritz"));
         Teachers.add(new Teacher(true, "Art", null, false, null, false, true, "David Love"));
         Teachers.add(new Teacher(true, "Art", null, true, "black", false, true, "Dainis Roman"));
-        Teachers.add(new Teacher(true, "Art", null, true, "brown", false, true, "Nicholas Wynia"));
+        Teachers.add(new Teacher(true, "Art", "K", true, "brown", false, true, "Nicholas Wynia"));
         //Chinese
         Teachers.add(new Teacher(false, "Chinese", "AD", true, "black", true, false, "Tsung Tsai"));
         //Classics
@@ -91,8 +91,8 @@ public class Guess {
 
 
     public void removeTeachers(Answer a){
-//if this is a string answer
-        if(a.isBoolean == false){
+//if this is a string answer    
+    if(a.isBoolean == false){
             for (int i=0; i<Teachers.size(); i++){
                 if(!(Teachers.get(i).getS(a.getKey()).equals(a.getSval()))){
                     Teachers.remove(i);

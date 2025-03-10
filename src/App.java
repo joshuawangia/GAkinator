@@ -25,6 +25,6 @@ public class App {
         }
 
         myScanner.close();
-        System.out.println("Your teacher is " + testGuess.guessTeacher()+ " !f");
+        System.out.println("Your teacher is " + testGuess.guessTeacher()+ " !");
     }
 }
