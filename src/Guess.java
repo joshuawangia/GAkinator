@@ -2,8 +2,9 @@ import java.util.ArrayList;
 
 
 public class Guess {
- ArrayList <Teacher> Teachers = new ArrayList<>();
+ public ArrayList <Teacher> Teachers = new ArrayList<>();
  int countQ = 0;
+ 
     public Guess(){
         ArrayList <Teacher> Teachers = new ArrayList<>();
         //Art
@@ -118,7 +119,7 @@ public class Guess {
         return Teachers.size();
     }
 
-    public Teacher guessTeacher(){
-        return Teachers.get(0);
-    }
+    //public Teacher guessTeacher(){
+        //return Teachers.get(0);
+    //}
 }

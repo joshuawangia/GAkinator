@@ -6,7 +6,7 @@ public class App {
         Guess testGuess = new Guess();
         QNA myQna = new QNA();
         int nextQuestion = testGuess.getNextQuestion();
-        while (testGuess.getLength() != 1) {
+        while (testGuess.getLength() > 1) {
             System.out.println(myQna.askQuestion(nextQuestion));
 
             // String answers
@@ -23,6 +23,6 @@ public class App {
         }
 
         myScanner.close();
-        System.out.println(testGuess.guessTeacher());
+        //System.out.println(testGuess.guessTeacher());
     }
 }
