@@ -4,7 +4,7 @@ public class QNA {
     "What color hair does your teacher have?", "Does your teacher wear glasses?", 
     "Does your teacher have a beard?"};
 
-    String[] atts = {"male", "dept","house", "hahsHair", "hairColor", "hasGlasses", "hasBeard"};
+    String[] atts = {"male", "dept","house", "hasHair", "hairColor", "hasGlasses", "hasBeard"};
 
     public QNA(){
     }

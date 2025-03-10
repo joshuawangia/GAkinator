@@ -6,7 +6,6 @@ public class Guess {
  int countQ = 0;
  
     public Guess(){
-        ArrayList <Teacher> Teachers = new ArrayList<>();
         //Art
         Teachers.add(new Teacher(false, "Art", "T", true, "black", false, false, "Sara Ritz"));
         Teachers.add(new Teacher(true, "Art", null, false, null, false, true, "David Love"));
@@ -93,33 +92,31 @@ public class Guess {
 
     public void removeTeachers(Answer a){
 //if this is a string answer
-        if(a.isBoolean = false){
+        if(a.isBoolean == false){
             for (int i=0; i<Teachers.size(); i++){
                 if(!(Teachers.get(i).getS(a.getKey()).equals(a.getSval()))){
                     Teachers.remove(i);
-                    countQ++;
                     i--;
                 }  
             }
         }
 //if this is a boolean answer
-        else{
-            for (int i=0; i<Teachers.size(); i++){
+        else if (a. isBoolean == true){
+             for (int i=0; i<Teachers.size(); i++){
                 if(!(Teachers.get(i).getB(a.getKey()) == a.getBval())){
                     Teachers.remove(i);
-                    countQ++;
                     i--;
                 }  
             }
         }
-    
+        countQ++;
     }
 
     public int getLength(){
         return Teachers.size();
     }
 
-    //public Teacher guessTeacher(){
-        //return Teachers.get(0);
-    //}
+    public Teacher guessTeacher(){
+        return Teachers.get(0);
+    }
 }

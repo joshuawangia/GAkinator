@@ -21,7 +21,7 @@ public class Teacher {
 
      //precondition: assume getB is looking for a Boolean
     public Boolean getB(String var){
-        Object value = attributes.get(var);
+        Object value =  attributes.get(var);
           return (Boolean) value;
   
     }

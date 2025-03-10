@@ -6,26 +6,25 @@ public class App {
         Guess testGuess = new Guess();
         QNA myQna = new QNA();
         int nextQuestion = testGuess.getNextQuestion();
-        System.out.println(testGuess.Teachers);
-        while (testGuess.getLength() != 1) {
+        while (testGuess.getLength() > 1) {
             System.out.println(myQna.askQuestion(nextQuestion));
 
             // String answers
             if (nextQuestion < 5 && nextQuestion % 3 != 0) {
                 testGuess.removeTeachers(myQna.Sanswer(nextQuestion, myScanner.nextLine()));
                 nextQuestion++;
-                System.out.println("removing " + nextQuestion);
+                System.out.println(testGuess.Teachers);
             } 
             // Boolean Answers
             else {
                 testGuess.removeTeachers(myQna.Banswer(nextQuestion, Boolean.parseBoolean(myScanner.nextLine())));
                 nextQuestion++;
-                System.out.println("bremoving " + nextQuestion);
+                System.out.println(testGuess.Teachers);
 
             }
         }
 
         myScanner.close();
-        //System.out.println(testGuess.guessTeacher());
+        System.out.println("Your teacher is " + testGuess.guessTeacher()+ " !f");
     }
 }
