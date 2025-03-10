@@ -95,7 +95,8 @@ public class Guess {
     if(a.isBoolean == false){
             for (int i=0; i<Teachers.size(); i++){
                 String teacherValue = Teachers.get(i).getS(a.getKey());
-            if ((teacherValue == null && a.getSval() != null) || (teacherValue != null && !teacherValue.equals(a.getSval()))) {
+            if ((teacherValue == null && a.getSval() != null) || 
+            (teacherValue != null && !teacherValue.equals(a.getSval()))) {
                     Teachers.remove(i);
                     i--;
                 }  

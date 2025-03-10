@@ -14,6 +14,9 @@ public class QNA {
     }
 
     public Answer Sanswer(int q, String input){
+        if (input.equals("null")){
+            return new Answer(atts[q], null);
+        }
         Answer sanswer = new Answer(atts[q], input);
         return sanswer;
     }
