@@ -13,13 +13,11 @@ public class App {
             if (nextQuestion < 5 && nextQuestion % 3 != 0) {
                 testGuess.removeTeachers(myQna.Sanswer(nextQuestion, myScanner.nextLine()));
                 nextQuestion++;
-                System.out.println(testGuess.Teachers);
             } 
             // Boolean Answers
             else {
                 testGuess.removeTeachers(myQna.Banswer(nextQuestion, Boolean.parseBoolean(myScanner.nextLine())));
                 nextQuestion++;
-                System.out.println(testGuess.Teachers);
 
             }
         }

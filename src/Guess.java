@@ -37,7 +37,7 @@ public class Guess {
         Teachers.add(new Teacher(true, "History", "AD", true, "blonde", true, false, "Robert Moyer"));
         Teachers.add(new Teacher(true, "History", "T", true, "gray", false, false, "Jamie Murray"));
         Teachers.add(new Teacher(true, "History", "W", true, "gray", true, true, "Mark Rabuck"));
-        Teachers.add(new Teacher(true, "History", "O", true, "brown", true, false, "Roxie Bratton"));
+        Teachers.add(new Teacher(true, "History", "O", true, "brown", true, false, "Adam Wilsman"));
         //Mathematics
         Teachers.add(new Teacher(false, "Math", "AD", true, "blonde", false, false, "Peggy Bradley"));
         Teachers.add(new Teacher(false, "Math", "G", true, "black", false, false, "Diana Caramanico"));
